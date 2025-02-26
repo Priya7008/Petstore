@@ -1,0 +1,89 @@
+openapi: 3.1.0
+x-stoplight:
+  id: 566bn3eiov0qp
+info:
+  title: Tredence
+  version: '1.0'
+servers:
+  - url: 'https://mockapi.io/projects/67a4086b31d0d3a6b7853180'
+paths:
+  /TransformApi/V1/transdata:
+    get:
+      summary: Your GET endpoint
+      tags: []
+      responses: {}
+      operationId: getTransformApiV1transdata
+      x-stoplight:
+        id: 1np1rkna5smgk
+components:
+  schemas:
+    User:
+      title: User
+      type: object
+      description: ''
+      examples:
+        - id: 142
+          firstName: Alice
+          lastName: Smith
+          email: alice.smith@gmail.com
+          dateOfBirth: '1997-10-31'
+          emailVerified: true
+          signUpDate: '2019-08-24'
+      properties:
+        id:
+          type: integer
+          description: Unique identifier for the given user.
+          x-stoplight:
+            id: t1n3h3boxzjpf
+        firstName:
+          type: string
+          x-stoplight:
+            id: h6fclrhzwqnoj
+        lastName:
+          type: string
+          x-stoplight:
+            id: dhgmem1pw52c4
+        email:
+          type: string
+          format: email
+          x-stoplight:
+            id: fmhjqemypo8gw
+        dateOfBirth:
+          type: string
+          format: date
+          example: '1997-10-31'
+          x-stoplight:
+            id: rm7e1c8e998qo
+        emailVerified:
+          type: boolean
+          description: Set to true if the user's email has been verified.
+          x-stoplight:
+            id: 5hzy2d12z2gcz
+        createDate:
+          type: string
+          format: date
+          description: The date that the user was created.
+          x-stoplight:
+            id: uhjykcqtjdnqy
+      required:
+        - id
+        - firstName
+        - lastName
+        - email
+        - emailVerified
+      x-stoplight:
+        id: 764jd16eyxm7p
+    id:
+      title: id
+      x-stoplight:
+        id: 4x5v065x86ysp
+      type: object
+      properties:
+        id:
+          type: string
+          x-stoplight:
+            id: r4yj938vwh6vr
+        name:
+          type: string
+          x-stoplight:
+            id: qvygxzaqe6f8b
